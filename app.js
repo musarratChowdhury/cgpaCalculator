@@ -25,5 +25,24 @@ form.addEventListener("submit", (e) => {
   resultArr.push(lab1.value);
   resultArr.push(lab2.value);
   //
-  console.log(resultArr);
+  //   console.log(resultArr);
+  ///
+  calculateCG(resultArr);
+  //   console.log(calculateCG(resultArr));
+  showResult.innerText = Number(calculateCG(resultArr)).toFixed(2);
 });
+
+function calculateCG(arr) {
+  let totalCredit = 18;
+  let sum = 0;
+  for (let i = 0; i < arr.length; i++) {
+    if (i < 5) {
+      sum += arr[i] * 3;
+      //   console.log(sum);
+    } else {
+      //   console.log(sum);
+      sum += arr[i] * 1.5;
+    }
+  }
+  return sum / totalCredit;
+}
