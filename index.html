@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CG-koto?</title>
+    <script src="app.js" defer></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Roboto:wght@500&family=Russo+One&family=Varta&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="header"></section>
+    <section class="body-area">
+      <div class="title">CGPA CALCULATOR</div>
+      <div class="instructions">Insert all your gpa then press Calculate!</div>
+      <div class="form-container">
+        <form id="form" class="form-here">
+          <div class="theory">
+            <label for="Power">Power</label>
+            <input class="w3-input" type="text" name="" id="Power" required />
+            <label for="VLSI">VLSI/multimedia</label>
+            <input class="w3-input" type="text" name="" id="VLSI" required />
+            <label for="Hetero">HETERO/</label>
+            <input class="w3-input" type="text" name="" id="Hetero" required />
+            <label for="CompArc">CompArc/Opto</label>
+            <input class="w3-input" type="text" name="" id="CompArc" required />
+            <label for="HUM">HUM</label>
+            <input class="w3-input" type="text" name="" id="HUM" required />
+          </div>
+          <div class="lab">
+            <label for="powerlab">Power Lab</label>
+            <input
+              class="w3-input"
+              type="text"
+              name=""
+              id="powerlab"
+              required
+            />
+            <label for="VLSI-lab">VLSI/BIO LAB</label>
+            <input
+              class="w3-input"
+              type="text"
+              name=""
+              id="VLSI-lab"
+              required
+            />
+          </div>
+          <div class="buttons w3-container">
+            <input class="w3-btn" type="submit" value="Calculate" />
+            <input class="w3-btn" id="reset" type="reset" value="Reset" />
+          </div>
+        </form>
+      </div>
+      <div class="result">
+        <h4 class="RESULT">Avg. CGPA :</h4>
+        <h5 class="show">4.5</h5>
+      </div>
+    </section>
+    <section class="footer"></section>
+  </body>
+</html>

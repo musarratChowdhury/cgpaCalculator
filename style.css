@@ -1,0 +1,100 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  /* border: 1px dashed black; */
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Mono", monospace;
+  height: 100vh;
+}
+.body-area {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.form-container {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #e99516;
+  border-radius: 5px;
+  border: 1px dashed rgb(185, 28, 0);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 10px;
+  border-radius: 5px;
+}
+.title,
+.result {
+  background-color: #255784;
+  color: white;
+}
+.instructions {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+  background-color: #e99516;
+  border: 1px dashed rgb(168, 49, 5);
+  border-radius: 6px;
+}
+.theory {
+  display: grid;
+}
+.lab label,
+.theory label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.lab input,
+.theory input {
+  border-radius: 5px;
+  border-radius: 5px;
+  border: 1px dashed rgb(185, 28, 0);
+}
+
+.lab {
+  display: grid;
+}
+
+.result {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  font-size: 1.3rem;
+  border-radius: 5px;
+}
+.show {
+  padding: 10px;
+  border: 1px dashed orange;
+  border-radius: 5px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  color: black;
+}
+.buttons {
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.w3-btn {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #255784;
+  color: white;
+}
+input[type="text"]:focus {
+  background-color: rgb(121, 186, 207);
+}
