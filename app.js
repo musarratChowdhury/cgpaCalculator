@@ -25,12 +25,16 @@ form.addEventListener("submit", (e) => {
   resultArr.push(lab1.value);
   resultArr.push(lab2.value);
   //
-  //   console.log(resultArr);
+  console.log(resultArr);
   ///
   calculateCG(resultArr);
-  //   console.log(calculateCG(resultArr));
+  console.log(calculateCG(resultArr));
   showResult.innerText = Number(calculateCG(resultArr)).toFixed(2);
+  resultArr = [];
 });
+resetBtn.addEventListener('click',()=>{
+    showResult.innerText = "";
+})
 
 function calculateCG(arr) {
   let totalCredit = 18;

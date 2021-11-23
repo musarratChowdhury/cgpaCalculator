@@ -54,11 +54,12 @@ body {
   font-size: 1.2rem;
   text-align: center;
 }
-.lab input,
-.theory input {
+.lab select,
+.theory select {
   border-radius: 5px;
   border-radius: 5px;
   border: 1px dashed rgb(185, 28, 0);
+  cursor: pointer;
 }
 
 .lab {
@@ -97,4 +98,14 @@ body {
 }
 input[type="text"]:focus {
   background-color: rgb(121, 186, 207);
+}
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  background-color: #e79821;
+}
+.header {
+  text-align: center;
+  margin-top: 10px;
+  background-color: #e79821;
 }
